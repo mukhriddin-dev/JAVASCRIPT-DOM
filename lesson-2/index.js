@@ -128,16 +128,16 @@
 // console.log(cards2);
 
 
-let box=document.querySelector(".box");
+// let box=document.querySelector(".box");
 
 
-console.log(box.clientWidth);
-console.log(box.clientHeight);
-console.log(box.offsetWidth);
-console.log(box.offsetHeight);
-console.log(box.scrollHeight);
-console.log(box.offsetTop)
-console.log(box.offsetRight);
+// console.log(box.clientWidth);
+// console.log(box.clientHeight);
+// console.log(box.offsetWidth);
+// console.log(box.offsetHeight);
+// console.log(box.scrollHeight);
+// console.log(box.offsetTop)
+// console.log(box.offsetRight);
 
 
 

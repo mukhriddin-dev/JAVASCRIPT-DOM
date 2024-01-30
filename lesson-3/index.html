@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        form{
+            margin: 50px auto;
+            max-width: 400px;
+            box-shadow:  0 0 10px silver;
+            padding: 40px;
+        }
+
+        label{
+            display: block;
+        }
+
+        input{
+            width: 90%;
+            padding: 13px;
+            margin-bottom: 20px;
+        }
+
+        .password_label{
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .visible{
+            position: absolute;
+            right: 17px;
+            top: 12px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1 class">login form</h1>
+ 
+    <form action="#" id="login_form" onsubmit="toggleForm()" class="login_form">
+        <label for="username">
+            <input id="username" type="text" placeholder="enter username">
+        </label>
+        <label for="password" class="password_label">
+            <input id="password" type="password" placeholder="enter password">
+            <span class="visible" onclick="visiblePassword()">
+                <i class='bx bx-show'></i>
+            </span>
+        </label>
+        <button type="submit">SUBMIT</button>
+        <button type="reset">RESET</button>
+    </form>
+
+    <h1></h1>
+
+
+</body>
+<script src="./script.js"></script>
+</html>
