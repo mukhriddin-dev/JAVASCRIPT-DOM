@@ -94,6 +94,11 @@ h1.style.cssText = "background-color:red";
 - reduce
 
 
+## extra String 
+
+str.subString(0, n)
+
+
 
 
 

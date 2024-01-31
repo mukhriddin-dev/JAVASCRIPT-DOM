@@ -1,59 +1,37 @@
-"use strict";
+"use  strict";
 
-let wrapper=document.querySelector('.card-wrapper');
-
-
+let wrapper = document.querySelector('.wrapper');
 
 
-    // let boxItem=document.createElement('div');
-    // boxItem.classList.add('p-5', 'bg-danger', 'm-1');
-    // boxItem.textContent=`box-item-1`;
-    // box.append(boxItem); 
-    
+db.forEach((el)=>{
+   
+let card=document.createElement('div');
+card.classList.add('card');
+
+card.innerHTML = `
+<img class="card__img" src="${el.image}" alt="${el.title}">
+
+<div class="card-body">
+
+    <h5>${el.title.substring(0,20)}</h5>
+    <strong class="fs-4"> ${el.price}$</strong>
+
+    <p>${el.description.substring(0,20)}</p>
+    <span class="card__category">category: ${el.category}</span>
+    <div class="d-flex gap-2">
+        <span>Rate: ${el.rating.rate}</span>
+        <span>Count: ${el.rating.count}</span>
+    </div>
+
+    <button class="btn btn-success w-100 mt-4">
+        add to cart
+    </button>
+
+</div>
 
 
-// box.after(boxItem);
-// box.before(boxItem);
-// box.append(boxItem);
-// box.append(boxItem);
-// box.append(boxItem);
+`;
 
-for(let i=0; i<products.length; i++){
+wrapper.appendChild(card);
 
-    let card=document.createElement('div');
-
-    card.classList.add('card');
-
-    card.innerHTML=`
-
-    <img src="https://picsum.photos/id/123/300/250" alt="product">
-      <div class="card-body">
-
-         <h5 class="card-title ${products[i].isActive ? '' : 'notOnsale'}">${products[i].name}</h5>
-
-         <p><strong>Price:</strong> ${products[i].price} $</p>
-        
-         <ul>
-            <li>memory: ${products[i].memory}GB</li>
-            <li>brand:${products[i].brand}</li>
-            <li><span class="circle" style="background:${products[i].color}"></span> </li>
-        </ul>
-
-    <button class="btn btn-primary" >
-            add to cart
-    </button> 
-    
-    `;
-
-    wrapper.append(card);
-
-    console.log(products[i])
-
-
-}
-
-
-
-
-
-
+})
