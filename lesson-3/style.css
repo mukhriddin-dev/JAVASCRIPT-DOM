@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: crimson;
+
+}
+
+nav .logo{
+font-size: 23px;
+text-decoration: none;
+color:#ffff;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap:50px;
+}
+
+
+nav ul a{
+    text-decoration: none;
+    color:#ffff;
+}
+
+.bx{
+    font-size: 32px;
+    cursor: pointer;
+    
+}
+
+.menu{
+    display: none;
+}
+
+@media  only screen and (max-width: 428px) {
+    nav ul{
+        background-color: #fff;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border: 2px red solid;
+        gap:0;
+        box-shadow:  0 0 1px 0 silver;
+        transition: all 0.2s ease-in-out;
+        
+    } 
+
+    nav ul li{
+        background-color: rgb(220, 240, 255);
+        margin-bottom: 2px;
+        padding: 20px;
+    }
+
+    nav ul li:hover{
+        background-color: whitesmoke;
+    }
+
+
+    nav ul a{
+        text-decoration: none;
+        color:red;
+    }
+
+    .menu{
+        display: block;
+    }
+}
+
+.swipe{
+    transform: translateX(-200%);
+
+}
+
+#intro{
+    padding: 60px 0;
+}
+
+.carousel{
+
+   max-width: 700px;
+   margin: 0 auto;
+   position: relative;
+   overflow: hidden;
+}
+
+.carousel__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    transition: all 0.3s linear;
+
+}
+
+.next, .prev{
+    position: absolute;
+}
+
+.next{
+    right: 0;
+    top:45%;
+    background: #ffff;
+}
+
+.prev{
+    left: 0;
+    top:45%;
+    background: #ffff;
+}
+
+.slide{
+    transform: translateX(-2100px);
+}

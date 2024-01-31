@@ -1,0 +1,60 @@
+let products = [
+
+    {
+        id: 1,
+        name: 'iphone 12 pro max',
+        memory: 128,
+        color: 'violet',
+        price: 10000,
+        image: 'http://picsum.photos/id/123/300/250',
+        brand: 'apple',
+        discount: 10,
+        isActive: false,
+        year: 2018
+    },
+    {
+        id: 2,
+        name: 'Redmi 12 pro',
+        memory: 512,
+        color: 'silver',
+        price: 300,
+        image: 'http://picsum.photos/id/123/300/250',
+        brand: 'xiaomi',
+        discount: 25,
+        isActive: true,
+    },
+    {
+        id: 3,
+        name: 'Nokia 1202',
+        memory: 0.1,
+        color: 'white',
+        price: 3000,
+        image: 'http://picsum.photos/id/123/300/250',
+        brand: 'Nokia',
+        discount: 0,
+        isActive: true,
+    },
+    {
+        id: 4,
+        name: 'Samsung Galaxy S23 ULTRA',
+        memory: 512,
+        color: 'green',
+        price: 1100,
+        image: 'http://picsum.photos/id/123/300/250',
+        brand: 'Samsung',
+        discount: 5,
+        isActive: true,
+    },
+    {
+        id: 4,
+        name: 'POCO ',
+        memory: 52,
+        color: 'black',
+        price: 10,
+        image: 'http://picsum.photos/id/123/300/250',
+        brand: 'Xiaomi',
+        discount: 5,
+        isActive: true,
+    }
+
+]

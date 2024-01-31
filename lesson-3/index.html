@@ -1,54 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <style>
-        form{
-            margin: 50px auto;
-            max-width: 400px;
-            box-shadow:  0 0 10px silver;
-            padding: 40px;
-        }
-
-        label{
-            display: block;
-        }
-
-        input{
-            width: 90%;
-            padding: 13px;
-            margin-bottom: 20px;
-        }
-
-        .password_label{
-            display: flex;
-            align-items: center;
-            position: relative;
-        }
-
-        .visible{
-            position: absolute;
-            right: 17px;
-            top: 12px;
-            font-size: 20px;
-            cursor: pointer;
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
 
-   
- 
+
+    <header>
+        <div class="container">
+            <nav>
+
+                <a href="" class="logo">LOGO</a>
+
+                <ul class="menu_list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Extra</a></li>
+                </ul>
+
+                <span class="menu" onclick="setToggle()">
+                    <i class='bx bx-menu'></i>
+                </span>
+            </nav>
+        </div>
+    </header>
 
 
- 
+    <main>
+        <section id="intro">
+            <div class="container">
+
+                <div class="carousel">
+
+                    <div class="carousel__list slide">
+                        <div class="carousel__list--item"><img src="https://picsum.photos/id/123/700/450" alt="1"></div>
+                        <div class="carousel__list--item"><img src="https://picsum.photos/id/124/700/450" alt="2"></div>
+                        <div class="carousel__list--item"><img src="https://picsum.photos/id/125/700/450" alt="3"></div>
+                        <div class="carousel__list--item"><img src="https://picsum.photos/id/129/700/450" alt="4"></div>
+                        <div class="carousel__list--item"><img src="https://picsum.photos/id/122/700/450" alt="5"></div>
+                        <div class="carousel__list--item"><img src="https://picsum.photos/id/121/700/450" alt="6"></div>
+                    </div>
+
+                  <span class="prev" onclick="prevSlide()"><i class='bx bx-left-arrow-alt' ></i></span>
+                  <span class="next" onclick="nextSlide()"><i class='bx bx-right-arrow-alt' ></i></span>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
 
 
 </body>
+
 <script src="./script.js"></script>
+
 </html>

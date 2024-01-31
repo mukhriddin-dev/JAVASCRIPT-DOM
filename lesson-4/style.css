@@ -1,0 +1,13 @@
+.circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid silver;
+    margin-top: 5px;
+}
+
+.notOnsale{
+    text-decoration: line-through;
+    text-decoration-color: red;
+}

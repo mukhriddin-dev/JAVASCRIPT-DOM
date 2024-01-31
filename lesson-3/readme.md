@@ -11,5 +11,15 @@
 - el.hasAttribute('attr_value'); // boolean true or false
 - el.attribute // attribute value
 
+-  classList
+
+- add()
+- remove()
+- toggle()
+- contains()
+
+
+
+
 
 
