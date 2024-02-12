@@ -73,7 +73,8 @@ submitForm.addEventListener('click', ()=>{
    
     
     if(val.length){
-        data.push({title: val})
+        list.innerHTML=""
+        data.push({title: val , id:Date.now()})
         renderData()
         inputText.value=""
     }
@@ -85,9 +86,10 @@ submitForm.addEventListener('click', ()=>{
 
 
 function renderData(){
-   
+    
     data?.forEach((el,index, arr)=>{
         const listItem=document.createElement('li');
+        listItem.classList.add('p-3','text-white', 'bg-success' , 'my-2');
         listItem.innerHTML=`task: ${el.title}`;
         list.appendChild(listItem)
         
@@ -104,6 +106,7 @@ function reset(){
 resetBtn.addEventListener('click', ()=>{
     reset();
     inputText.value=""
+    list.innerHTML=""
     console.log("first")
 })
 
