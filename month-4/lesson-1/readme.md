@@ -17,7 +17,7 @@
 - Object , Object methods , spread , object destructors 
 - Object.entries , Object.fromEntries , Object.freeze ... etc
 - this keyword
-- Deep copy or Shallow copy 
+- Deep copy or Shallow copy
 - Advanced functions  ()
 - Functions factory , Function pipe , Function generator , Function Currying , IIFE ...
 - Higher order functions: map , filter , foreach , reduce , sort 
