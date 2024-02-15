@@ -2,11 +2,8 @@
 
 // --------------- ELEMENTS ----------------
 let cardWrapper = $('.wrapper');
-
 let brandOption = $("#brands");
-
 let priceOption = $("#price");
-
 let lettersOption = $("#letters");
 
 
@@ -44,7 +41,8 @@ function renderProducts(data = []) {
                           ${Math.round(discountPercentage)}%
                           OFF
                          </div>
-`);
+           `
+);
 
             cardWrapper.appendChild(card);
 
@@ -54,6 +52,7 @@ function renderProducts(data = []) {
     }
 
 }
+
 renderProducts(product.products)
 
 // ------------ RENDER FUNCTION end --------------------
@@ -66,7 +65,7 @@ function findBrand(data) {
         data.forEach((el) => {
 
             if (!brand.includes(el.brand)) {
-                brand.push(el.brand)
+                 brand.push(el.brand)
             }
 
         })
@@ -104,6 +103,7 @@ renderBrand(brand)
 
 
 brandOption.addEventListener('change', (e) => {
+    console.log(e.target.value)
     sortBrands(e.target.value)
 })
 
