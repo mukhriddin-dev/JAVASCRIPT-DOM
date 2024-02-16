@@ -1,0 +1,24 @@
+1. Region bo'yicha filterlansin (Region: Asia)
+2. Aholisi 30M dan yuqori davlatlar ro'yhati chiqarilsin.
+3. Valyuta birligi bo'yicha davlatlar ro'yhati chiqarilsin 
+
+MAP
+
+ARRAY -> MAP -> 
+
+[
+    {
+        id:1,
+        nomi:"Uzbekistan",
+        mintaqa:"Asia",
+        aholisi:34122122,
+        musaqillik: true,
+        poyataxt:'Toshkent',
+        bayroq:{
+            png: "bayroq.png",
+            svg: "bayroq.svg",
+        },
+        maydoni:448447,
+        telefon:'+998'
+    }
+]

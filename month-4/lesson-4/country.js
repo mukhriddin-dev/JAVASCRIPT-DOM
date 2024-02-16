@@ -682,6 +682,13 @@ const country=[
           "nativeName": "Русский"
         }
       ],
+      "currencies": [
+        {
+          "code": "XCD",
+          "name": "East Caribbean dollar",
+          "symbol": "$"
+        }
+      ],
       "translations": {
         "br": "Antarktika",
         "pt": "Antárctida",
