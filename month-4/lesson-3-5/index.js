@@ -215,7 +215,6 @@ cardWrapper.addEventListener('click', (e)=>{
         }else{
             console.log("bu avval qo'shilgan")
         }
-           
       }
 
 })
