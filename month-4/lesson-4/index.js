@@ -77,5 +77,25 @@ function countPrice(country) {
 
 const summa=countPrice(country)
 
-console.log(summa.toLocaleString('de-De'))
+
+// console.log(summa.toLocaleString('de-De'))
+
+let card=document.querySelector('.card');
+let wrapper = card.querySelector('.wrapper');
+let btns=document.querySelectorAll('.btn');
+
+let btn=document.createElement('button')
+btn.classList.add('btn','btn-danger');
+btn.innerHTML="Click";
+
+card.append(btn)
+
+
+
+card.addEventListener('click', (e)=>{
+    
+    if(e.target.classList.contains('btn-danger')){
+    
+    }
+})
 

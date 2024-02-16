@@ -4,7 +4,7 @@ const product={
         {
             "id": 1,
             "quantity": 0,
-            "title": "iPhone 9",
+            "title": "AiPhone 9",
             "description": "An apple mobile which is nothing like apple",
             "price": 549,
             "discountPercentage": 12.96,
